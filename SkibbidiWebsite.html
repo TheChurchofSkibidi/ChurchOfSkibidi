@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Church Of Skibbidi</title>
+  <link rel="stylesheet" href="ChurchOfSkibbidi/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Charm&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="ChurchOfSkibbidi\SkibidiImg\favicon.ico">
+</head>
+<header>
+</header>
+
+<body>
+  <!-- NavBarCode -->
+  <div class="navbar">
+    <a href="SkibbidiWebsite.html">Home</a>
+    <div class="dropdown">
+      <a href="SkibidiWorship.html" class="dropbtn">Worship</a>
+      <div class="dropdown-content">
+        <a href="Prayer.html">Prayers</a>
+        <a href="Songs.html">Songs</a>
+        <a href="AltarGuide.html">Altar Guide</a>
+      </div>
+    </div>
+    <a href="Sermons.html">Commandments</a>
+    <a href="Commandments.html">Commandments</a>
+    <a href="Contact.html">Contact</a>
+    <a href="Donate.html">Donate</a>
+    </div>
+    <!-- NavBarCodeEnd -->
+  <main class="skibbidi-page">
+    <div class="video-bannerHomePage">
+      <div class="color-wash">
+      <video class="fade-gradient" autoplay muted loop playsinline>
+        <source src="SkibidiVid/Wheat.mp4" type="video/webm">
+        <source src="SkibidiVid/Wheat2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      </div>
+      <div class="overlay-textHomePage">
+        <h1>Church Of Skibidi</h1>
+      </div>
+    </div>
+  
+<!-- Traveling Wave Effect -->
+<svg class="wave-divider" viewBox="0 0 1440 150">
+  <path id="wavePath" style="fill:#3C291E;" d="M0,60 C480,150 960,-30 1440,60 L1440,150 L0,150 Z"></path>
+</svg>
+<script>
+  const wavePath = document.getElementById("wavePath");
+  let progress = 0.02;
+  
+  function animateWave() {
+      progress += 0.03;
+      let shift = Math.sin(progress) * 100;
+  
+      wavePath.setAttribute("d", `M0,60 C480,${-30 + shift} 960,${-60 - shift} 1440,60 L1440,150 L0,150 Z`);
+  
+      requestAnimationFrame(animateWave);
+  }
+  
+  animateWave();
+  </script>
+
+
+  <div class="Skibiditopimg"><img src="SkibidiImg/SkibidiSymbolNoBackgroundReal.png" alt="Skibidi Image"
+    style="width: 100%; height: 120px;" />
+</div>
+<div class="images">
+<div class="Community"><img src="SkibidiImg/Community.jpg" alt="Skibidi Image"
+  style="width: 100%; height: 100%;" style="border-radius: 20px;" />
+  <p>Done with respect for nature—our mission was a true reflection of Skibidi’s teachings. As we camped under the open sky, we embraced courage in service and honesty in fellowship, deepening our bond with one another and with Him. This experience renewed our purpose, reminding us that faith is lived through action, together in unity.</p>
+</div>
+<div class="Happy"><img src="SkibidiImg/Happy.jpg" alt="Skibidi Image"
+  style="width: 100%; height: 100%;" style="border-radius: 20px;" />
+  <p>Kindness reflects Skibidi’s teachings, strengthening souls and bringing light through every act of care.</p>
+</div>
+<div class="Baptize"><img src="SkibidiImg/Baptize.jpg" alt="Skibidi Image"
+  style="width: 100%; height: 100%;" style="border-radius: 20px;" />
+  <p>In Skibidism, baptizing babies and children is considered taboo, as we believe baptism should be a sacred, conscious choice—one that individuals must opt into when they are ready to embrace their faith.</p>
+</div>
+
+      <div>
+        <div class="SkibidiHomeQuote">
+          <p>Imbued with <strong>Power</strong> ● Led with <strong>Respect</strong> ● Strengthened by <strong>Acceptance</strong> ● Guided by <strong>Courage</strong> ● and Defined by <strong>Honesty</strong>.</p>
+        </div>
+        <!-- SKibbidi Img and Quote End -->
+        <div class="SkibidiMission">
+          <p>Here at The Church of Skibidi, we aim to create a world full of kindness, love, acceptance courage, and
+            honesty. Through the teachings of Skibidi, we create a community of people working to make the world around
+            them a better, happier place. All genders races and sexualities are welcome here, bigotry has no place here.
+            We would love to have you here for our next meet!</p>
+        </div>
+        <!--MissonStatementEnd-->
+        <div class="Mission">
+          <p>Our Mission</p>
+        </div>
+      </main class="skibbidi-page">
+  <footer>
+    <script>document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".SkibidiHomeIMG, .SkibidiHomeQuote, .SkibidiMission, .Mission, .SkibidiPledge, .video-bannerHomePage .overlay-textHomePage, .video-bannerHomePage h1");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.remove("hidden");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => {
+        el.classList.add("hidden"); // Initially hide elements
+        observer.observe(el);
+    });
+});</script>
+    <div id="footer-text">
+      <p>&copy; Abigail Widmeyer 2025</p>
+    </div>
+  </footer>
+</body>
+
+</html>
